@@ -1,0 +1,29 @@
+.containerAll {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 5em;
+}
+
+.deleteStyle {
+
+    width: 30px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.deleteStyle:hover {
+
+    transform: scale(1.2);
+
+}
+
+.valueStyle {
+
+    color: #93cafe;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px black;
+    display: flex;
+    gap: 0.5em;
+
+}

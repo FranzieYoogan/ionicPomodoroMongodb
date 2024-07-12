@@ -1,0 +1,89 @@
+<ion-header [translucent]="true"  class="navbarStyle">
+  <ion-toolbar>
+    <app-folder></app-folder>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content id="container"  [fullscreen]="true">
+  
+  <section class="containerAll">
+
+    <div class="containerItems">
+
+      <div style="position: relative; display: flex; justify-content: center;">
+        <button type="button" (click)="start()" class="buttonStyle"><img class="buttonStart" src="/assets/icon/sword.png" alt=""></button>
+        <h1 id="min">00</h1><h1>:</h1><h1 id="sec">00</h1>
+
+          <button type="button" (click)="showEdit()" class="editStyle"><img class="buttonStart" src="/assets/icon/wand.png" alt=""></button>
+
+    
+        
+      </div>
+    
+
+    </div>
+
+  </section>
+
+  <section class="containerShield">
+
+    <div style="position: relative;" class="containerShield">
+
+      <img id="shield" (click)="show()" class="shieldStyle" src="/assets/icon/shield.png" alt="">
+
+    </div>
+
+  </section>
+
+  <section class="containerPanelAll">
+
+
+    <div>
+
+      
+<form class="formSelect max-w-sm mx-auto" id="formSelect">
+  <select id="selectValue" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+    <option selected>Choose your timer</option>
+    @for (item of data; track item) {
+
+      <option value="{{item._id}}">{{item.pomoName}}</option>
+    }
+
+  </select>
+
+  <div class="containerButtonSelect">
+
+    <button type="button" (click)="select()" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Select</button>
+
+  </div>
+  
+</form>
+
+
+<form class="formSelect" id="formSelectEdit">
+
+  <div class="containerEdit">
+
+
+
+  <div>
+    <input type="text" id="minEdit" class="inputEdit bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Min" required />
+</div>
+
+<div>
+  <input type="text" id="secEdit" class="inputEdit bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Sec" required />
+</div>
+
+<button id="buttonEdit" style="display: none;" type="button" (click)="editSubmit()"></button>
+
+</div>
+
+</form>
+
+
+    </div>
+
+  </section>
+
+
+</ion-content>

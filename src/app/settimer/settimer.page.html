@@ -1,0 +1,67 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <app-folder></app-folder>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+
+  <section class="containerAll">
+    
+    <div class="borderStyle">
+
+      <div class="containerItems">
+
+  
+    <div>
+      <label for="timerName" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Timer</label>
+      <input type="text" id="timerName" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Timer Name" required />
+      
+    </div>
+
+    <div>
+      <label for="timerMin" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Minutes</label>
+      <input type="number" id="timerMin" class="inputNumbers bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Minutes" required />
+      
+    </div>
+
+    <div>
+      <label for="timerSec" class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Seconds</label>
+      <input type="number" id="timerSec" class="inputNumbers bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500" placeholder="Seconds" required />
+      
+    </div>
+
+  </div>
+    <div class="containerButton">
+
+      <button type="button" (click)="submit()" class="buttonStyle text-white bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 me-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-blue-800">Save</button>
+  
+    </div>
+
+  </div>
+
+  
+
+  </section>
+
+  <section class="containerAllAlert" id="containerAllAlert">
+
+    <div class="contarinerItemsAlert">
+
+    <div class="containerClose" (click)="close()">
+
+      <h1 class="closeStyle">X</h1>
+
+    </div>
+
+    <div>
+      <h1>Lacking Fields</h1>  
+    </div>
+
+    </div>
+
+  </section>
+
+
+</ion-content>

@@ -1,0 +1,136 @@
+.containerAll {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 3em;
+
+}
+
+.containerItems {
+
+    display: flex;
+    justify-content: center;
+    border: 2px solid #93cafe;
+    border-radius: 9000px;  
+    width: 120px;
+    height: 120px;
+    padding: 15px;
+}
+
+h1 {
+
+    font-size: 40px;
+    color: #93cafe;
+    text-shadow: 2px 2px 2px black;
+    font-weight: 900;
+}
+
+.buttonStyle {
+
+    position: absolute;
+    color: #93cafe;
+   
+}
+
+.editStyle {
+
+    position: absolute;
+    color: #93cafe;
+    bottom: -3%;
+   
+}
+
+.navStyle {
+
+    width: 30px;
+
+}
+
+.spanNav {
+
+    color: #93cafe;
+    margin-left: 0.5em;
+    font-weight: 900;
+    text-shadow: 2px 2px 2px black;
+
+}
+
+.buttonStart {
+
+    width: 25px;
+    transition: 1s;
+}
+
+.buttonStart:hover, .buttonStart:active, .buttonStart:focus {
+
+    transform: scale(1.2);
+
+}
+
+.containerShield {
+
+    display: flex;
+    justify-content: right;
+    margin-right: 1em;
+    position: relative;
+}
+
+.shieldStyle {
+
+    border: 1px solid black;
+    cursor: pointer;
+    background-color: #93cafe;   
+    border-radius: 40px;
+    width: 80px;
+    position: fixed;
+    bottom: 3%;
+    padding: 5px;
+
+}
+
+.containerPanelAll {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.formSelect {
+
+    margin-top: 1em;
+    display: none;
+    opacity: 0;
+}
+
+.containerEdit {
+
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+
+}
+
+.inputEdit {
+
+    width: 100px;
+
+}
+
+.containerButtonSelect {
+
+    display: flex;
+    justify-content: center;
+    margin-top: 1em;
+
+}
+
+
+ion-toolbar {
+    --background: #244abc;
+}
+
+input {
+
+    border: 1px solid #93cafe;
+
+}

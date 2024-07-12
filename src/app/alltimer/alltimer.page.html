@@ -1,0 +1,24 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <app-folder></app-folder>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+
+  <section class="containerAll">
+
+    <div>
+
+      @for (item of dataAll; track item) {
+
+        <h1 class="valueStyle">{{item.pomoName}} - {{item.pomoMin}}:{{item.pomoSec}} <img class="deleteStyle" (click)="delete(item._id)" src="/assets/icon/delete.png" alt=""></h1>
+
+      }
+
+    </div>
+
+  </section>
+
+
+</ion-content>
